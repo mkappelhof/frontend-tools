@@ -2,28 +2,29 @@ on:
   push:
     branches-ignore:
       - $default-branch
-
-inputs:
-  nodeVersion:
-    description: Node.js version to use
-    required: true
-    default: "18.17.1"
-  workingDirectory:
-    description: "Working directory"
-    required: false
-    default: "./"
-  packageManager:
-    description: "Package manager to use"
-    required: false
-    default: "yarn"
-  releasePrName:
-    required: false
-    type: string
-    default: Upcoming Release Changes
-  releaseCommand:
-    required: false
-    type: string
-    default: release
+on:
+  workflow_call:
+    inputs:
+      nodeVersion:
+        description: Node.js version to use
+        required: true
+        default: "18.17.1"
+      workingDirectory:
+        description: "Working directory"
+        required: false
+        default: "./"
+      packageManager:
+        description: "Package manager to use"
+        required: false
+        default: "yarn"
+      releasePrName:
+        required: false
+        type: string
+        default: Upcoming Release Changes
+      releaseCommand:
+        required: false
+        type: string
+        default: release
 
 jobs:
   publish:
