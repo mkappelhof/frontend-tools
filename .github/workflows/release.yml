@@ -1,0 +1,56 @@
+on:
+  push:
+    branches-ignore:
+      - $default-branch
+
+inputs:
+  nodeVersion:
+    description: Node.js version to use
+    required: true
+    default: "18.17.1"
+  workingDirectory:
+    description: "Working directory"
+    required: false
+    default: "./"
+  packageManager:
+    description: "Package manager to use"
+    required: false
+    default: "yarn"
+  releasePrName:
+    required: false
+    type: string
+    default: Upcoming Release Changes
+  releaseCommand:
+    required: false
+    type: string
+    default: release
+
+jobs:
+  publish:
+    name: publish
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ inputs.nodeVersion }}
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile --immutable
+        working-directory: ${{ inputs.workingDirectory }}
+
+      - name: Create Release
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          title: ${{ inputs.releasePrName }}
+          commit: "chore(release): release packages versions"
+          publish: "${{inputs.packageManager}} ${{ inputs.releaseCommand }}"
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
