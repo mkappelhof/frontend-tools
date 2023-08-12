@@ -1,0 +1,19 @@
+{
+  "name": "@mkappelhof/eslint-config-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "echo 'no build step'",
+    "test": "yaml-validator .eslintrc.yml"
+  },
+  "dependencies": {
+    "@mkappelhof/prettier-config": "*",
+    "@mkappelhof/eslint-config-base": "*",
+    "yaml-validator": "5.1.0"
+  },
+  "peerDependencies": {
+    "eslint": "8.46.0",
+    "typescript": "5.1.6"
+  }
+}

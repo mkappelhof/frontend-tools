@@ -1,0 +1,12 @@
+{
+  "name": "@mkappelhof/ts-config",
+  "version": "1.0.0",
+  "main": "base.json",
+  "license": "MIT",
+  "scripts": {
+    "build": "echo 'no build step'"
+  },
+  "peerDependencies": {
+    "typescript": "5.1.6"
+  }
+}

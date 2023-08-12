@@ -1,0 +1,25 @@
+{
+  "name": "@mkappelhof/eslint-config-base",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "repository": "git@gitlab.com:mauricekappelhof/frontend-setup.git",
+  "scripts": {
+    "build": "echo 'no build step'",
+    "test": "yaml-validator .eslintrc.yml"
+  },
+  "dependencies": {
+    "@mkappelhof/prettier-config": "*",
+    "@typescript-eslint/eslint-plugin": "6.3.0",
+    "@typescript-eslint/parser": "6.3.0",
+    "eslint-config-prettier": "9.0.0",
+    "eslint-plugin-prettier": "5.0.0",
+    "eslint-plugin-simple-import-sort": "10.0.0",
+    "yaml-validator": "5.1.0"
+  },
+  "peerDependencies": {
+    "eslint": "8.46.0",
+    "typescript": "5.1.6"
+  }
+}

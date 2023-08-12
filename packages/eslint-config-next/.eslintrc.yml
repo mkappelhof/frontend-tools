@@ -1,0 +1,7 @@
+env:
+  browser: true
+  es2021: true
+extends:
+  - '@mkappelhof/eslint-config-base'
+  - '@mkappelhof/eslint-config-react'
+  - next/core-web-vitals

@@ -1,0 +1,24 @@
+{
+  "name": "@mkappelhof/eslint-config-next",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "echo 'no build step'",
+    "test": "yaml-validator .eslintrc.yml"
+  },
+  "dependencies": {
+    "@mkappelhof/eslint-config-base": "*",
+    "@mkappelhof/eslint-config-react": "*",
+    "@mkappelhof/prettier-config": "*",
+    "eslint-config-next": "13.4.13",
+    "eslint-plugin-react": "7.33.1",
+    "yaml-validator": "5.1.0"
+  },
+  "peerDependencies": {
+    "eslint": "8.46.0",
+    "next": "13.4.13",
+    "react": "18.2.0",
+    "typescript": "5.1.6"
+  }
+}
