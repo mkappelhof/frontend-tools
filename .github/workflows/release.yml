@@ -6,15 +6,15 @@ on:
   workflow_call:
     inputs:
       nodeVersion:
-        description: Node.js version to use
+        type: string
         required: true
         default: "18.17.1"
       workingDirectory:
-        description: "Working directory"
+        type: string
         required: false
         default: "./"
       packageManager:
-        description: "Package manager to use"
+        type: string
         required: false
         default: "yarn"
       releasePrName:
