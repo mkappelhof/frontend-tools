@@ -43,7 +43,7 @@ jobs:
           node-version: ${{ inputs.nodeVersion }}
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile --immutable
+        run: yarn install --ignore-engines --frozen-lockfile --immutable
         working-directory: ${{ inputs.workingDirectory }}
 
       - name: Create Release
