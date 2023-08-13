@@ -1,5 +1,11 @@
 # @mkappelhof/prettier-config
 
+## 1.0.5
+
+### Patch Changes
+
+- 11b2879: update packages
+
 ## 1.0.4
 
 ### Patch Changes
