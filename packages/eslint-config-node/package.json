@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "repository": "git@github.com:mkappelhof/frontend-tools.git",
+  "author": "Maurice Kappelhof <maurice@mauricekappelhof.nl>",
   "scripts": {
     "build": "rollup -c",
     "test": "yaml-validator .eslintrc.yml"
@@ -16,5 +17,11 @@
   "peerDependencies": {
     "eslint": "8.46.0",
     "typescript": "5.1.6"
-  }
+  },
+  "keywords": [
+    "eslint",
+    "config",
+    "node.js",
+    "typescript"
+  ]
 }
