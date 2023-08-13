@@ -4,9 +4,13 @@
   "main": "base.json",
   "license": "MIT",
   "scripts": {
-    "build": "echo 'no build step'"
+    "build": "rollup -c",
+    "test": "echo 'No test step'"
   },
   "peerDependencies": {
     "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "@rollup/plugin-json": "6.0.0"
   }
 }

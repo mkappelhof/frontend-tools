@@ -3,10 +3,12 @@
   "version": "1.0.1",
   "main": "index.json",
   "license": "MIT",
-  "private": true,
   "repository": "git@gitlab.com:mauricekappelhof/frontend-setup.git",
   "scripts": {
-    "build": "echo 'no build step'",
+    "build": "rollup -c",
     "test": "echo 'no test step'"
+  },
+  "devDependencies": {
+    "@rollup/plugin-json": "6.0.0"
   }
 }
