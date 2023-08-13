@@ -3,10 +3,9 @@
   "version": "1.0.1",
   "main": "index.js",
   "license": "MIT",
-  "private": true,
   "repository": "git@gitlab.com:mauricekappelhof/frontend-setup.git",
   "scripts": {
-    "build": "echo 'no build step'",
+    "build": "rollup -c",
     "test": "yaml-validator .eslintrc.yml"
   },
   "dependencies": {

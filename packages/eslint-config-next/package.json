@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "echo 'no build step'",
+    "build": "rollup -c",
     "test": "yaml-validator .eslintrc.yml"
   },
   "dependencies": {
