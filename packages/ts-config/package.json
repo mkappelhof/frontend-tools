@@ -1,6 +1,6 @@
 {
   "name": "@mkappelhof/ts-config",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "base.json",
   "license": "MIT",
   "repository": "git@github.com:mkappelhof/frontend-tools.git",

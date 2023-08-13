@@ -1,5 +1,14 @@
 # @mkappelhof/eslint-config-react
 
+## 1.0.3
+
+### Patch Changes
+
+- 4bb1446: update repository url
+- Updated dependencies [4bb1446]
+  - @mkappelhof/eslint-config-base@1.0.3
+  - @mkappelhof/prettier-config@1.0.3
+
 ## 1.0.2
 
 ### Patch Changes
