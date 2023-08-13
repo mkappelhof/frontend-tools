@@ -4,11 +4,16 @@
   "main": "index.json",
   "license": "MIT",
   "repository": "git@github.com:mkappelhof/frontend-tools.git",
+  "author": "Maurice Kappelhof <maurice@mauricekappelhof.nl>",
   "scripts": {
     "build": "rollup -c",
     "test": "echo 'no test step'"
   },
   "devDependencies": {
     "@rollup/plugin-json": "6.0.0"
-  }
+  },
+  "tags": [
+    "prettier",
+    "config"
+  ]
 }

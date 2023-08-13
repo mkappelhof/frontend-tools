@@ -4,6 +4,7 @@
   "main": "base.json",
   "license": "MIT",
   "repository": "git@github.com:mkappelhof/frontend-tools.git",
+  "author": "Maurice Kappelhof <maurice@mauricekappelhof.nl>",
   "scripts": {
     "build": "rollup -c",
     "test": "echo 'No test step'"
@@ -13,5 +14,10 @@
   },
   "devDependencies": {
     "@rollup/plugin-json": "6.0.0"
-  }
+  },
+  "tags": [
+    "typescript",
+    "tsconfig",
+    "config"
+  ]
 }
