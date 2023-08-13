@@ -1,5 +1,14 @@
 # @mkappelhof/eslint-config-react
 
+## 1.0.4
+
+### Patch Changes
+
+- 3561b82: Add readme's
+- Updated dependencies [3561b82]
+  - @mkappelhof/eslint-config-base@1.0.4
+  - @mkappelhof/prettier-config@1.0.4
+
 ## 1.0.3
 
 ### Patch Changes

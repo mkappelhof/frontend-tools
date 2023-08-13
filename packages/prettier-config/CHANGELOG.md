@@ -1,5 +1,11 @@
 # @mkappelhof/prettier-config
 
+## 1.0.4
+
+### Patch Changes
+
+- 3561b82: Add readme's
+
 ## 1.0.3
 
 ### Patch Changes
