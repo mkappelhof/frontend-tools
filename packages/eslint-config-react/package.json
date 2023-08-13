@@ -3,6 +3,7 @@
   "version": "1.0.2",
   "main": "index.js",
   "license": "MIT",
+  "repository": "git@github.com:mkappelhof/frontend-tools.git",
   "scripts": {
     "build": "rollup -c",
     "test": "yaml-validator .eslintrc.yml"

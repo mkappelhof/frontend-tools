@@ -3,7 +3,7 @@
   "version": "1.0.2",
   "main": "index.json",
   "license": "MIT",
-  "repository": "git@gitlab.com:mauricekappelhof/frontend-setup.git",
+  "repository": "git@github.com:mkappelhof/frontend-tools.git",
   "scripts": {
     "build": "rollup -c",
     "test": "echo 'no test step'"

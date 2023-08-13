@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "packageManager": "yarn@1.22.19",
   "private": true,
-  "repository": "git@gitlab.com:mauricekappelhof/frontend-setup.git",
+  "repository": "git@github.com:mkappelhof/frontend-tools.git",
   "author": "Maurice Kappelhof <maurice@mauricekappelhof.nl>",
   "license": "MIT",
   "scripts": {
