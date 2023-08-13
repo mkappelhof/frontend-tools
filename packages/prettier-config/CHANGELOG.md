@@ -1,5 +1,12 @@
 # @mkappelhof/prettier-config
 
+## 1.0.2
+
+### Patch Changes
+
+- 0088404: update release pipeline
+- 7885039: change to external packages
+
 ## 1.0.1
 
 ### Patch Changes
