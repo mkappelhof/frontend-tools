@@ -1,34 +1,11 @@
 on:
   push:
-    branches-ignore:
-      - $default-branch
-
-  workflow_call:
-    inputs:
-      nodeVersion:
-        type: string
-        required: true
-        default: "18.17.1"
-      workingDirectory:
-        type: string
-        required: false
-        default: "./"
-      packageManager:
-        type: string
-        required: false
-        default: "yarn"
-      releasePrName:
-        required: false
-        type: string
-        default: Upcoming Release Changes
-      releaseCommand:
-        required: false
-        type: string
-        default: release
+    branches:
+      - master
 
 jobs:
-  publish:
-    name: publish
+  create-release:
+    name: create-release
     runs-on: ubuntu-latest
 
     steps:
@@ -40,19 +17,28 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ inputs.nodeVersion }}
+          node-version: 18.17.1
 
       - name: Install dependencies
         run: yarn install --ignore-engines --frozen-lockfile --immutable
-        working-directory: ${{ inputs.workingDirectory }}
+        working-directory: ./
+
+      - name: Creating .npmrc
+        run: |
+          cat << EOF > "$HOME/.npmrc"
+            //registry.npmjs.org/:_authToken=$NPM_TOKEN
+          EOF
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Create Release
+        if: ${{ github.event.pull_request.title != 'Upcoming Release Changes' }}
         id: changesets
         uses: changesets/action@v1
         with:
-          title: ${{ inputs.releasePrName }}
+          title: Upcoming Release Changes
           commit: "chore(release): release packages versions"
-          publish: "${{inputs.packageManager}} ${{ inputs.releaseCommand }}"
+          publish: yarn release
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -2,7 +2,7 @@
   "name": "@mkappelhof/frontend-setup",
   "version": "1.0.0",
   "packageManager": "yarn@1.22.19",
-  "private": true,
+  "private": false,
   "repository": "git@gitlab.com:mauricekappelhof/frontend-setup.git",
   "author": "Maurice Kappelhof <maurice@mauricekappelhof.nl>",
   "license": "MIT",
