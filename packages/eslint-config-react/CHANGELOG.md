@@ -1,5 +1,14 @@
 # @mkappelhof/eslint-config-react
 
+## 1.0.5
+
+### Patch Changes
+
+- 11b2879: update packages
+- Updated dependencies [11b2879]
+  - @mkappelhof/eslint-config-base@1.0.5
+  - @mkappelhof/prettier-config@1.0.5
+
 ## 1.0.4
 
 ### Patch Changes
