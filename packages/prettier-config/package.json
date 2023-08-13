@@ -1,6 +1,6 @@
 {
   "name": "@mkappelhof/prettier-config",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "index.json",
   "license": "MIT",
   "repository": "git@github.com:mkappelhof/frontend-tools.git",
