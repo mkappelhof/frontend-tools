@@ -1,5 +1,11 @@
 # @mkappelhof/eslint-config-base
 
+## 1.0.6
+
+### Patch Changes
+
+- 3d8ee7b: remove linebreakes between import statements
+
 ## 1.0.5
 
 ### Patch Changes
