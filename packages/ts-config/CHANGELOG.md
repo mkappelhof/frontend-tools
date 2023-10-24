@@ -1,5 +1,11 @@
 # @mkappelhof/ts-config
 
+## 1.0.6
+
+### Patch Changes
+
+- 0e9c110: Add Remix config
+
 ## 1.0.5
 
 ### Patch Changes
