@@ -4,6 +4,7 @@ This repo contains various packages I use in personal projects.
 
 - `packages/eslint-config-base`: Base ESLint configuration extended by specific configurations
 - `packages/eslint-config-next`: ESLint configuration for Next.js projects
+- `packages/eslint-config-remix`: ESLint configuration for Remix projects
 - `packages/eslint-config-node`: ESLint configuration for Node.js projects
 - `packages/eslint-config-react`: ESLint configuration for React projects
 - `packages/prettier`: Prettier configuration
